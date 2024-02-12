@@ -1,6 +1,6 @@
 ---
-title: "Documentation"
-description: "Learn how to use Congo and its features."
+title: "Projects"
+description: "Get to understand my work and my passion !"
 
 cascade:
   showDate: false
@@ -10,13 +10,13 @@ cascade:
 ---
 
 {{< lead >}}
-Simple, yet powerful. Learn how to use Congo and its features.
+Simple, yet powerful.
 {{< /lead >}}
 
 ![Screenshots of Congo on an iPhone, iPad and MacBook](screenshot.png)
 
-This section contains everything you need to know about Congo. If you're new, check out the [Installation]({{< ref "projects/advanced-customisation" >}}) guide to begin or visit the [Samples]({{< ref "projects" >}}) section to see what Congo can do.
+This section contains everything you need to know about the technical and non-technical work that I have undertaken.
 
-_Special thanks to [Katerina Limpitsouni](https://ninalimpi.com) for the excellent illustrations that are used throughout these docs!_
+_I feel so excited to share my contributions to the world !!_
 
 ---
