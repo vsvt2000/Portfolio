@@ -12,16 +12,15 @@ jobs:
     runs-on: ubuntu-latest
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
-    defaults:
-      run:
-        working-directory: mywebsite
+    # defaults:
+    #   run:
+    #     working-directory: mywebsite
     steps:
       - name: Checkout
         uses: actions/checkout@v3
         with:
           submodules: true
           fetch-depth: 0
-        working-directory: mywebsite
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
