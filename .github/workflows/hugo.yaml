@@ -26,7 +26,6 @@ concurrency:
 defaults:
   run:
     shell: bash
-    working-directory: mywebsite
 
 jobs:
   # Build job
@@ -34,6 +33,10 @@ jobs:
     runs-on: ubuntu-latest
     env:
       HUGO_VERSION: 0.122.0
+    defaults:
+      run:
+        working-directory: mywebsite
+
     steps:
       - name: Install Hugo CLI
         run: |
