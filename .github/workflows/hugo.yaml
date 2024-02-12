@@ -58,21 +58,19 @@ jobs:
         with:
           working-directory: ./mywebsite
       - name: Install Node.js dependencies
-        with:
-          working-directory: ./mywebsite
+        working-directory: ./mywebsite
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm --prefix ci || true"
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
+        working-directory: ./mywebsite
         run: |
           hugo \
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
-        with:
-          working-directory: ./mywebsite
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
