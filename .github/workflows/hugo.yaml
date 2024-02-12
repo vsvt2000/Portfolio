@@ -58,7 +58,7 @@ jobs:
         with:
           working-directory: ./mywebsite
       - name: Install Node.js dependencies
-        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm --prefix ci || true"
         with:
           working-directory: ./mywebsite
       - name: Build with Hugo
